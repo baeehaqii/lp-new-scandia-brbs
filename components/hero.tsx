@@ -17,20 +17,20 @@ export default function Hero() {
 
   const heroSlides = [
     {
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761071336/Type_85_zmze7h.avif",
-      title: "Clean, Calm, & Classy",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1754373669/WhatsApp_Image_2025-06-19_at_11.00.09_1_ghtwop.jpg",
+      title: "Maximize Your Space, Maximize Your Life",
       description:
-        "Perumahan eksklusif di Slawi yang menghadirkan kenyamanan, gaya hidup modern, dan lokasi strategis di pusat kota.",
+        "Mezzanine multifungsi untuk hidup yang lebih nyaman dan produktif.",
     },
     {
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761071337/type_90_qpwdco.avif",
-      title: "Hunian Modern & Nyaman",
-      description: "Desain arsitektur minimalis modern dengan fasilitas lengkap untuk keluarga Indonesia.",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1754373669/WhatsApp_Image_2025-06-19_at_11.00.10_npqgn6.jpg",
+      title: "Hidup Praktis di Jantung Brebes",
+      description: "Dekat pusat aktivitas, sekolah, dan area komersial.",
     },
     {
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761071664/Gate_lkgdrn.avif",
-      title: "Investasi Masa Depan",
-      description: "Lokasi strategis dengan akses mudah ke berbagai fasilitas umum dan pusat kota Slawi.",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1754373670/2_13_-_Photo_s3tf0l.jpg",
+      title: "Scandinavian, Smart & Green",
+      description: "Desain timeless dengan ventilasi, pencahayaan, dan sistem listrik modern.",
     },
   ]
 

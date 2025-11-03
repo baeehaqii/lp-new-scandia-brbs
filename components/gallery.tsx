@@ -15,12 +15,12 @@ export default function Gallery() {
   // Data gambar-gambar yang ada di gallery
   const galleryImages = [
     {
-      src: "https://res.cloudinary.com/dqobwse9q/image/upload/w_600,h_400,c_fill,f_auto,q_auto:eco/v1754637086/TYPE_85_2_asjyzz.png",
+      src: "https://res.cloudinary.com/dqobwse9q/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1754373669/WhatsApp_Image_2025-06-19_at_11.00.09_1_ghtwop.jpg",
       alt: "Modern luxury home exterior",
       type: "image",
     },
     {
-      src: "https://res.cloudinary.com/dqobwse9q/image/upload/w_600,h_400,c_fill,f_auto,q_auto:eco/v1754637084/TYPE_85_1_i718cl.png",
+      src: "https://res.cloudinary.com/dqobwse9q/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1754373669/WhatsApp_Image_2025-06-19_at_11.00.10_npqgn6.jpg",
       alt: "Modern luxury home pool",
       type: "image",
     },
@@ -95,9 +95,9 @@ export default function Gallery() {
   return (
     <section id="gallery" className="section">
       <div className="container">
-        <h2 className="section-title">Gallery Sapphire Serenity Slawi</h2>
+        <h2 className="section-title">Gallery Sapphire Scandia Brebes</h2>
         <p className="section-subtitle">
-          Temukan keindahan dan kenyamanan rumah impian Anda di Sapphire Serenity Slawi. Setiap sudut dirancang dengan
+          Temukan keindahan dan kenyamanan rumah impian Anda di Sapphire Scandia Brebes. Setiap sudut dirancang dengan
           perhatian terhadap detail, menciptakan ruang yang sempurna untuk hidup dan bersantai.
         </p>
 

@@ -329,6 +329,7 @@ export default function Properties() {
   const [kprDp, setKprDp] = useState<string>('')
   const [kprTahun, setKprTahun] = useState<string>('')
   const [kprBunga, setKprBunga] = useState<string>('')
+  const [showAllSpecs, setShowAllSpecs] = useState(false)
 
   const propertyTypes: PropertyType[] = [
     { id: "tipe-rumah", label: "Tipe Rumah", active: true },
@@ -341,49 +342,49 @@ export default function Properties() {
     {
       id: 1,
       images: [
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_380,h_285,c_fill,f_auto,q_auto:eco/v1761071336/Type_85_zmze7h.avif",
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_380,h_285,c_fill,f_auto,q_auto:eco/v1761071337/type_90_qpwdco.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1754373669/WhatsApp_Image_2025-06-19_at_11.00.09_1_ghtwop.jpg",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1754367005/WhatsApp_Image_2025-06-19_at_11.00.09_2_k8yuy6.jpg",
       ],
-      floorPlan: "/denah-type-75.png",
-      name: "Tipe 75",
-      price: "7XX.XX.XXX",
+      floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185704/Screenshot_2025-11-03_at_22.51.15_vf3bz0.avif",
+      name: "Type Sierra Mezzanine",
+      price: "6XX.XX.XXX",
       bedrooms: 2,
-      bathrooms: 2,
-      area: "79",
+      bathrooms: 1,
+      area: "47",
       description:
-        "Tipe 75/79 dengan 2 lantai adalah pilihan ideal untuk pasangan muda yang menginginkan rumah mewah di kawasan eksklusif. Dengan desain yang efisien, rumah ini menawarkan kenyamanan dengan harga terjangkau.",
+        "Type Sierra Mezzanine dengan luas bangunan 47 m² adalah pilihan ekonomis namun tetap berkualitas. Dengan desain modern dan layout yang efisien, unit ini cocok untuk investasi dan hunian pertama.",
       certificate: "SHM",
     },
     {
       id: 2,
       images: [
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_380,h_285,c_fill,f_auto,q_auto:eco/v1761071336/Type_85_zmze7h.avif",
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_380,h_285,c_fill,f_auto,q_auto:eco/v1761071337/type_90_qpwdco.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1754373669/WhatsApp_Image_2025-06-19_at_11.00.08_1_jgwagy.jpg",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1754373670/2_13_-_Photo_s3tf0l.jpg",
       ],
-      floorPlan: "/denah-type-85.png",
-      name: "Tipe 85",
-      price: "8XX.XXX.XXX",
+      floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185705/Screenshot_2025-11-03_at_22.51.27_i6bu3k.avif",
+      name: "Type Sienna (type 50)",
+      price: "5XX.XX.XXX",
       bedrooms: 3,
-      bathrooms: 3,
-      area: "85",
+      bathrooms: 1,
+      area: "50",
       description:
-        "Tipe 85/85 dengan 2 lantai menawarkan ruang yang lebih luas dengan tambahan kamar tidur, cocok untuk keluarga dengan anak. Desain modern dan berada di kawasan eksklusif.",
+        "Type Sienna (type 50) dengan luas bangunan 50 m² menawarkan ruang yang optimal untuk keluarga. Didesain dengan konsep modern Scandinavian yang mengutamakan efisiensi ruang dan kenyamanan maksimal.",
       certificate: "SHM",
     },
     {
       id: 3,
       images: [
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_380,h_285,c_fill,f_auto,q_auto:eco/v1761071336/Type_85_zmze7h.avif",
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_380,h_285,c_fill,f_auto,q_auto:eco/v1761071337/type_90_qpwdco.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1754373669/WhatsApp_Image_2025-06-19_at_11.00.08_1_jgwagy.jpg",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1754373670/2_13_-_Photo_s3tf0l.jpg",
       ],
-      floorPlan: "/denah-type-90.png",
-      name: "Tipe 90",
-      price: "9XX.XXX.XXX",
-      bedrooms: 4,
-      bathrooms: 3,
-      area: "90",
+      floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185704/Screenshot_2025-11-03_at_22.51.33_ycgiih.avif",
+      name: "Type Sienna (type 47)",
+      price: "4XX.XX.XXX",
+      bedrooms: 2,
+      bathrooms: 1,
+      area: "47",
       description:
-        "Tipe 90/90 dengan 2 Lantai adalah pilihan premium dengan ruang lebih luas dan 4 kamar tidur. Ideal untuk keluarga yang membutuhkan ruang ekstra dan kenyamanan maksimal.",
+        "Type Sienna (type 47) dengan luas bangunan 47 m² adalah pilihan ekonomis namun tetap berkualitas. Dengan desain modern dan layout yang efisien, unit ini cocok untuk investasi dan hunian pertama.",
       certificate: "SHM",
     },
   ]
@@ -391,9 +392,9 @@ export default function Properties() {
   const siteplan = {
     id: "siteplan-1",
     image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_1000,h_700,c_fill,f_auto,q_auto:eco/v1755444815/siteplane_serenity_slawi_kvzyhe.png",
-    name: "Siteplan Sapphire Serenity Slawi",
+    name: "Siteplan Sapphire Scandia Brebes",
     description:
-      "Masterplan perumahan Sapphire Serenity Slawi yang menampilkan layout, jalan, ruang terbuka hijau, dan fasilitas umum.",
+      "Masterplan perumahan Sapphire Scandia Brebes yang menampilkan layout, jalan, ruang terbuka hijau, dan fasilitas umum.",
   }
 
   const specifications = {
@@ -401,21 +402,21 @@ export default function Properties() {
     dinding: "bata merah, portland semen/setara, roaster 10 x 20 cm",
     lantai: "granit tile 60 x 60 cm (interior), keramik 40 x 40 cm (carport)",
     atap: "atap baja ringan, reng galvalum, genteng beton",
-    kamarMandi: "Closet duduk, jet washer, instalasi water filter, kitchen sink",
-    kusenPintu: "Kusen Alumunium, pintu Multiplek+HPL",
+    kamarMandi: "Closet duduk, jet washer, instalasi water hiter, kitchen sink",
+    kusenPintu: "Kusen Alumunium, pintu HPL",
     jendela: "kaca",
     plafon: "rangka Hollow, gypsum, shadowline",
     air: "PDAM",
     listrik: "Jaringan listrik tanam (underground)",
     elektrikal: "LED, lampu outbow, saklar Schneider",
-    mezanin: "double hollow, lantai SPC (type 55)",
+    mezanin: "double hollow, SPC",
     fiturRumah: "kanopi rangka hollow, cover wood plank, smart door lock",
   }
 
   const location = {
-    embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.152090540976!2d109.1275648!3d-6.991360799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fbf007c3b46cb%3A0x5da496f205d213b2!2sSapphire%20Serenity%20Slawi!5e0!3m2!1sen!2sid!4v1761065829691!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>',
-    name: "Denah Lokasi Sapphire Serenity Slawi",
-    description: "Lokasi strategis di pusat kota Slawi dengan akses mudah ke berbagai fasilitas umum.",
+    embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0582467601953!2d109.0452974!3d-6.8836264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fbb003a24b9a9%3A0xbc17dc58df291309!2sSapphire%20Scandia%20Brebes!5e0!3m2!1sen!2sid!4v1762184741859!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>',
+    name: "Denah Lokasi Sapphire Scandia Brebes",
+    description: "Lokasi strategis di jantung kota Brebes dengan akses mudah ke berbagai fasilitas umum.",
   }
 
   interface Property {
@@ -591,8 +592,7 @@ export default function Properties() {
       <div className="container">
         <h2 className="section-title">Siteplan & Tipe Rumah</h2>
         <p className="section-subtitle">
-          Temukan rumah impian Anda di Sapphire Serenity Slawi. Kami menawarkan berbagai tipe rumah yang dirancang untuk
-          memenuhi kebutuhan dan gaya hidup Anda.
+          Temukan rumah impian Anda di Sapphire Scandia Brebes dengan berbagai tipe yang dirancang khusus untuk memenuhi kebutuhan dan gaya hidup Anda.
         </p>
 
         <div className="property-type-container">
@@ -757,39 +757,65 @@ export default function Properties() {
                   <span className="specification-label">Kamar Mandi/WC:</span>
                   <span className="specification-value">{specifications.kamarMandi}</span>
                 </div>
-                <div className="specification-item">
-                  <span className="specification-label">Kusen & Pintu:</span>
-                  <span className="specification-value">{specifications.kusenPintu}</span>
-                </div>
-                <div className="specification-item">
-                  <span className="specification-label">Jendela:</span>
-                  <span className="specification-value">{specifications.jendela}</span>
-                </div>
-                <div className="specification-item">
-                  <span className="specification-label">Plafon:</span>
-                  <span className="specification-value">{specifications.plafon}</span>
-                </div>
-                <div className="specification-item">
-                  <span className="specification-label">Air:</span>
-                  <span className="specification-value">{specifications.air}</span>
-                </div>
-                <div className="specification-item">
-                  <span className="specification-label">Listrik:</span>
-                  <span className="specification-value">{specifications.listrik}</span>
-                </div>
-                <div className="specification-item">
-                  <span className="specification-label">Elektrikal:</span>
-                  <span className="specification-value">{specifications.elektrikal}</span>
-                </div>
-                <div className="specification-item">
-                  <span className="specification-label">Mezanin (type 55):</span>
-                  <span className="specification-value">{specifications.mezanin}</span>
-                </div>
-                <div className="specification-item">
-                  <span className="specification-label">Fitur Rumah:</span>
-                  <span className="specification-value">{specifications.fiturRumah}</span>
-                </div>
+
+                {showAllSpecs && (
+                  <>
+                    <div className="specification-item">
+                      <span className="specification-label">Kusen & Pintu:</span>
+                      <span className="specification-value">{specifications.kusenPintu}</span>
+                    </div>
+                    <div className="specification-item">
+                      <span className="specification-label">Jendela:</span>
+                      <span className="specification-value">{specifications.jendela}</span>
+                    </div>
+                    <div className="specification-item">
+                      <span className="specification-label">Plafon:</span>
+                      <span className="specification-value">{specifications.plafon}</span>
+                    </div>
+                    <div className="specification-item">
+                      <span className="specification-label">Air:</span>
+                      <span className="specification-value">{specifications.air}</span>
+                    </div>
+                    <div className="specification-item">
+                      <span className="specification-label">Listrik:</span>
+                      <span className="specification-value">{specifications.listrik}</span>
+                    </div>
+                    <div className="specification-item">
+                      <span className="specification-label">Elektrikal:</span>
+                      <span className="specification-value">{specifications.elektrikal}</span>
+                    </div>
+                    <div className="specification-item">
+                      <span className="specification-label">Mezanin:</span>
+                      <span className="specification-value">{specifications.mezanin}</span>
+                    </div>
+                    <div className="specification-item">
+                      <span className="specification-label">Fitur Rumah:</span>
+                      <span className="specification-value">{specifications.fiturRumah}</span>
+                    </div>
+                  </>
+                )}
               </div>
+
+              <button
+                onClick={() => setShowAllSpecs(!showAllSpecs)}
+                style={{
+                  marginTop: '20px',
+                  padding: '12px 24px',
+                  backgroundColor: '#831016',
+                  color: '#ffffff',
+                  border: 'none',
+                  borderRadius: '8px',
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  fontFamily: 'inherit'
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#6b0d12')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#831016')}
+              >
+                {showAllSpecs ? 'Tampilkan Lebih Sedikit' : 'Tampilkan Lebih Banyak'}
+              </button>
             </div>
           </div>
         ) : activeType === "lokasi" ? (
@@ -811,7 +837,7 @@ export default function Properties() {
               <p>{location.description}</p>
               <div className="location-button-container">
                 <Link
-                  href="https://maps.app.goo.gl/yWFRgAr5ZDvcyGFW6"
+                  href="https://maps.app.goo.gl/nMxDRGsiHRPAUhiP8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="location-gmaps-button"
@@ -936,7 +962,7 @@ export default function Properties() {
 
                     <div className="modal-cta">
                       <Link
-                        href="https://wa.me/62811261740?text=Halo,%20saya%20tertarik%20dengan%20properti%20Sapphire%20Serenity%20Slawi"
+                        href="https://wa.me/62811261740?text=Halo,%20saya%20tertarik%20dengan%20properti%20Sapphire%20Scandia%20Brebes"
                         className="modal-cta-button"
                       >
                         Hubungi Kami

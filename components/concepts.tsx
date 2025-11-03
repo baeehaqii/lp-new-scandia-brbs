@@ -18,59 +18,59 @@ export default function Concepts() {
   const concepts: Concept[] = [
     {
       id: 1,
-      title: "Konsep Desain Responsif Iklim",
-      subtitle: "Orientasi Bangunan",
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/q_10/v1761066026/konsep-orientasi-bangunan_bcqzu2.png",
-      alt: "Konsep Desain Responsif Iklim - Orientasi Bangunan",
+      title: "Konsep Kesehatan Bangunan",
+      subtitle: "",
+      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185708/Screenshot_2025-11-03_at_22.51.40_mpvgui.avif",
+      alt: "Konsep Kesehatan Bangunan dan Penghematan Energi",
     },
     {
       id: 2,
-      title: "Konsep Ventilasi Udara",
-      subtitle: "Cross Ventilation",
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/q_10/v1761066025/konsep-ventilasi-udara_q5xev7.png",
-      alt: "Konsep Ventilasi Udara",
+      title: "Sistem Sanitasi Air",
+      subtitle: "",
+      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185705/Screenshot_2025-11-03_at_22.51.48_jurp2e.avif",
+      alt: "Sistem Sanitasi Air Bersih dan Limbah",
     },
     {
       id: 3,
-      title: "Konsep Pencahayaan Alami",
-      subtitle: "Natural Lighting",
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/q_10/v1761066189/konsep-pencahayaan-alami_ueh1wu.png",
-      alt: "Konsep Pencahayaan Alami",
+      title: "Sistem drainase",
+      subtitle: "",
+      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185705/Screenshot_2025-11-03_at_22.51.55_s6w2b3.avif",
+      alt: "Sistem Drainase",
     },
     {
       id: 4,
-      title: "Konsep Desain Responsif Iklim",
+      title: "Konsep Air Kotor Cair",
       subtitle: "Sistem Pelindung Matahari",
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/q_10/v1761066025/konsep-sistem-pelindung-matahari_mqmzrm.png",
-      alt: "Konsep Sistem Pelindung Matahari",
+      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185706/Screenshot_2025-11-03_at_22.52.05_zcugd6.avif",
+      alt: "Konsep Air Kotor Cair",
     },
     {
       id: 5,
-      title: "Konsep Desain Responsif Iklim",
-      subtitle: "Bentuk Atap",
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/q_10/v1761066025/konsep-bentuk-atap_adivub.png",
-      alt: "Konsep Bentuk Atap",
+      title: "Konsep Air Kotor Padat",
+      subtitle: "",
+      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185706/Screenshot_2025-11-03_at_22.52.13_ibknnu.avif",
+      alt: "Konsep Air Kotor Padat",
     },
     {
       id: 6,
-      title: "Konsep Fasad",
-      subtitle: "Material Bangunan",
+      title: "Konsep Air Kotor",
+      subtitle: "",
       image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/q_10/v1761066025/konsep-fasad-material_sr5883.png",
       alt: "Konsep Fasad - Material Bangunan",
     },
     {
       id: 7,
-      title: "Konsep Fasad",
-      subtitle: "Gaya Arsitektur Minimalis Modern",
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/q_10/v1761066025/konsep-fasad-gaya_zvha7c.png",
-      alt: "Konsep Fasad - Gaya Arsitektur",
+      title: "Exterior Fasad",
+      subtitle: "",
+      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185707/Screenshot_2025-11-03_at_22.50.44_iehhp1.avif",
+      alt: "Exterior Fasad",
     },
     {
       id: 8,
-      title: "Konsep Ruang Terbuka",
-      subtitle: "Open Plan",
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/q_10/v1761066025/konsep-ruang-terbuka_w5r8jd.png",
-      alt: "Konsep Ruang Terbuka",
+      title: "Interior Fasad",
+      subtitle: "",
+      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762187196/Screenshot_2025-11-03_at_22.50.52_kqbgq0.avif",
+      alt: "Interior Fasad",
     },
   ]
 
@@ -87,7 +87,7 @@ export default function Concepts() {
   return (
     <section id="konsep" className="concepts-section">
       <div className="container">
-        <h2 className="section-title">Konsep Desain Sapphire Serenity</h2>
+        <h2 className="section-title">Konsep Desain Sapphire Scandia</h2>
         <p className="section-subtitle">
           Rumah yang dirancang dengan konsep responsif iklim tropis, memadukan estetika modern dengan kenyamanan
           maksimal

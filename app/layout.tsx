@@ -6,20 +6,21 @@ import { ThemeProvider } from "@/components/ThemeProvider"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Sapphire Serenity Slawi",
-  description: "Temukan properti impian Anda bersama Sapphire Serenity Slawi",
+  title: "Sapphire Scandia Brebes - Perumahan Modern Scandinavian di Brebes",
+  description: "Temukan properti impian Anda di Sapphire Scandia Brebes, perumahan modern Scandinavian di Jl. Taman Siswa, Brebes dengan konsep minimalis, fungsional dan estetika",
   icons: {
     icon: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761065068/Logo_pogacr.jpg",
     shortcut: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761065068/Logo_pogacr.jpg",
     apple: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761065068/Logo_pogacr.jpg",
   },
   keywords: [
-    "Sapphire Serenity Slawi",
-    "Perumahan Slawi",
-    "Rumah Slawi",
-    "Sapphire Serenity",
-    "Rumah Tegal",
-    "Perumahan Tegal",
+    "Sapphire Scandia Brebes",
+    "Perumahan Brebes",
+    "Rumah Brebes",
+    "Hunian Modern Brebes",
+    "Properti Brebes",
+    "Scandinavian Modern",
+    "Mezzanine Brebes",
   ],
 }
 
