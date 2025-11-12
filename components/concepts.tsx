@@ -62,7 +62,7 @@ export default function Concepts() {
       id: 7,
       title: "Exterior Fasad",
       subtitle: "",
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185707/Screenshot_2025-11-03_at_22.50.44_iehhp1.avif",
+      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762961721/Screenshot_2025-11-12_at_22.32.23_dkbt1g.avif",
       alt: "Exterior Fasad",
     },
     {

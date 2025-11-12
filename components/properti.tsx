@@ -347,12 +347,11 @@ export default function Properties() {
       ],
       floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185704/Screenshot_2025-11-03_at_22.51.15_vf3bz0.avif",
       name: "Type Sierra Mezzanine",
-      price: "6XX.XX.XXX",
       bedrooms: 2,
       bathrooms: 1,
-      area: "47",
+      area: "72",
       description:
-        "Type Sierra Mezzanine dengan luas bangunan 47 m² adalah pilihan ekonomis namun tetap berkualitas. Dengan desain modern dan layout yang efisien, unit ini cocok untuk investasi dan hunian pertama.",
+        "Type Sierra Mezzanine dengan luas bangunan 54 m² adalah pilihan ekonomis namun tetap berkualitas. Dengan desain modern dan layout yang efisien, unit ini cocok untuk investasi dan hunian pertama.",
       certificate: "SHM",
     },
     {
@@ -363,7 +362,6 @@ export default function Properties() {
       ],
       floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185705/Screenshot_2025-11-03_at_22.51.27_i6bu3k.avif",
       name: "Type Sienna (type 50)",
-      price: "5XX.XX.XXX",
       bedrooms: 3,
       bathrooms: 1,
       area: "50",
@@ -379,7 +377,6 @@ export default function Properties() {
       ],
       floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762185704/Screenshot_2025-11-03_at_22.51.33_ycgiih.avif",
       name: "Type Sienna (type 47)",
-      price: "4XX.XX.XXX",
       bedrooms: 2,
       bathrooms: 1,
       area: "47",
@@ -391,7 +388,7 @@ export default function Properties() {
 
   const siteplan = {
     id: "siteplan-1",
-    image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_1000,h_700,c_fill,f_auto,q_auto:eco/v1755444815/siteplane_serenity_slawi_kvzyhe.png",
+    image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1762961742/Screenshot_2025-11-12_at_22.32.38_zi0ozb.avif",
     name: "Siteplan Sapphire Scandia Brebes",
     description:
       "Masterplan perumahan Sapphire Scandia Brebes yang menampilkan layout, jalan, ruang terbuka hijau, dan fasilitas umum.",
@@ -424,7 +421,6 @@ export default function Properties() {
     images: string[]
     floorPlan: string
     name: string
-    price: string
     bedrooms: number
     bathrooms: number
     area: string
@@ -727,7 +723,7 @@ export default function Properties() {
           <div className="specifications-container">
             <div className="specifications-image">
               <Image
-                src="https://res.cloudinary.com/dqobwse9q/image/upload/w_500,h_350,c_fill,f_auto,q_auto:eco/v1754637084/TYPE_85_1_i718cl.png"
+                src="https://res.cloudinary.com/dqobwse9q/image/upload/v1754373670/2_13_-_Photo_s3tf0l.jpg"
                 alt="Spesifikasi Rumah"
                 width={600}
                 height={800}
@@ -956,9 +952,6 @@ export default function Properties() {
                         </div>
                       </div>
                     </div>
-
-                    <h3 className="modal-subtitle">Harga</h3>
-                    <div className="modal-price">Rp {selectedProperty.price}</div>
 
                     <div className="modal-cta">
                       <Link
