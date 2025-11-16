@@ -87,7 +87,7 @@ export default function Concepts() {
   return (
     <section id="konsep" className="concepts-section">
       <div className="container">
-        <h2 className="section-title">Konsep Desain Sapphire Scandia</h2>
+        <h2 className="section-title">Skema Pembelian & Dokumen</h2>
         <p className="section-subtitle">
           Rumah yang dirancang dengan konsep responsif iklim tropis, memadukan estetika modern dengan kenyamanan
           maksimal
