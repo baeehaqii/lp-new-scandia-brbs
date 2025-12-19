@@ -5,12 +5,7 @@ import Link from "next/link"
 import { usePixel } from "@/hooks/use-pixel"
 
 export default function CallToAction() {
-  const { trackContact, trackLead } = usePixel()
-
-  const handleCtaClick = () => {
-    trackContact()
-    trackLead()
-  }
+  const { trackWhatsappCTA, trackPromoCTA } = usePixel()
 
   return (
     <section id="cta" className="cta-section">
@@ -27,7 +22,7 @@ export default function CallToAction() {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button cta-button-primary"
-              onClick={handleCtaClick}
+              onClick={trackWhatsappCTA}
             >
               <Phone className="cta-button-icon" />
               Whatsapp Kami
@@ -38,7 +33,7 @@ export default function CallToAction() {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button cta-button-outline"
-              onClick={handleCtaClick}
+              onClick={trackPromoCTA}
             >
               <Percent className="cta-button-icon" />
               Dapatkan Promo

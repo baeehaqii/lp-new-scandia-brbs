@@ -15,8 +15,30 @@ export const usePixel = () => {
     trackEvent("Lead")
   }
 
-  const trackContact = () => {
-    trackEvent("Contact")
+  const trackContact = (buttonLabel?: string) => {
+    const data = buttonLabel ? { content_name: buttonLabel } : {}
+    trackEvent("Contact", data)
+  }
+
+  const trackWhatsappFloating = () => {
+    trackEvent("Contact", { 
+      content_name: "Floating WhatsApp Button",
+      content_type: "product"
+    })
+  }
+
+  const trackWhatsappCTA = () => {
+    trackEvent("Contact", { 
+      content_name: "Whatsapp Kami CTA",
+      content_type: "product"
+    })
+  }
+
+  const trackPromoCTA = () => {
+    trackEvent("Lead", { 
+      content_name: "Dapatkan Promo CTA",
+      content_type: "product"
+    })
   }
 
   const trackInitiateCheckout = () => {
@@ -28,6 +50,9 @@ export const usePixel = () => {
     trackPageView,
     trackLead,
     trackContact,
+    trackWhatsappFloating,
+    trackWhatsappCTA,
+    trackPromoCTA,
     trackInitiateCheckout,
   }
 }
