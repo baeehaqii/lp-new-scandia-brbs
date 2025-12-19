@@ -1,9 +1,15 @@
 "use client"
 
 import { WhatsAppIcon } from "./icons"
+import { usePixel } from "@/hooks/use-pixel"
 
 export default function WhatsAppFloat() {
+  const { trackContact } = usePixel()
+
   const handleClick = () => {
+    // Track Meta Pixel event
+    trackContact()
+
     // Replace with your WhatsApp number (format: country code + number without + or spaces)
     const phoneNumber = "62811261740" // Example: Indonesian number
     const message = encodeURIComponent("Halo, saya tertarik dengan Sapphire Scandia Brebes")

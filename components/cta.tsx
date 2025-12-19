@@ -1,7 +1,17 @@
+"use client"
+
 import { Phone, ClipboardList, Percent } from "lucide-react"
 import Link from "next/link"
+import { usePixel } from "@/hooks/use-pixel"
 
 export default function CallToAction() {
+  const { trackContact, trackLead } = usePixel()
+
+  const handleCtaClick = () => {
+    trackContact()
+    trackLead()
+  }
+
   return (
     <section id="cta" className="cta-section">
       <div className="container">
@@ -17,6 +27,7 @@ export default function CallToAction() {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button cta-button-primary"
+              onClick={handleCtaClick}
             >
               <Phone className="cta-button-icon" />
               Whatsapp Kami
@@ -27,6 +38,7 @@ export default function CallToAction() {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button cta-button-outline"
+              onClick={handleCtaClick}
             >
               <Percent className="cta-button-icon" />
               Dapatkan Promo
